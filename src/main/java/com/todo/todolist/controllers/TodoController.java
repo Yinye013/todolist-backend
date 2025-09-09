@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.*;
 import org.springframework.web.bind.annotation.CrossOrigin; // 👈avoid that pesky cors error
 
-@CrossOrigin(origins = "http://localhost:5173") // 👈so that it can allow requets from my frontend.
+@CrossOrigin(origins = "http://localhost:5173") // 👈so that it can allow requests from my frontend.
 @RestController
 @RequestMapping("/todos")
 
