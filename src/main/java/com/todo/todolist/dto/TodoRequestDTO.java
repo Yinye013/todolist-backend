@@ -1,27 +1,17 @@
-package com.todo.todolist.models;
+package com.todo.todolist.dto;
 
-public class TodoResponseDTO {
-    private Long id;
+public class TodoRequestDTO {
     private String title;
     private String description;
     private boolean completed;
 
-    public TodoResponseDTO() {
+    public TodoRequestDTO() {
     }
 
-    public TodoResponseDTO(Long id, String title, String description, boolean completed) {
-        this.id = id;
+    public TodoRequestDTO(String title, String description, boolean completed) {
         this.title = title;
         this.description = description;
         this.completed = completed;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getTitle() {
@@ -43,7 +33,6 @@ public class TodoResponseDTO {
     public boolean isCompleted() {
         return completed;
     }
-    
     public boolean getCompleted() {
         return completed;
     }
